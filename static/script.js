@@ -52,9 +52,6 @@ function createCategoryCheckboxes(category, containerId) {
                 label.htmlFor = checkbox.id;
                 label.textContent = `${size} (${typeData.standard})`;
                 
-                // 図面ツールチップを追加
-                createDiagramTooltip(typeKey, checkboxDiv);
-                
                 checkboxDiv.appendChild(checkbox);
                 checkboxDiv.appendChild(label);
                 groupDiv.appendChild(checkboxDiv);
