@@ -1,0 +1,8 @@
+[project]
+name = "screw-dimension-app"
+version = "0.1.0"
+description = "Bolt, Washer, and Nut Dimension Display Application"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+]

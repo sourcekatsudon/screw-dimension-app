@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ネジ・ナット・ワッシャー寸法表示システム</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ネジ・ナット・ワッシャー寸法表示システム</h1>
+        </header>
+        
+        <div class="main-content">
+            <div class="left-panel">
+                <h2>部品選択</h2>
+                
+                <div class="category">
+                    <h3>ボルト・ネジ</h3>
+                    <div id="bolts-container" class="items-container"></div>
+                </div>
+                
+                <div class="category">
+                    <h3>ナット</h3>
+                    <div id="nuts-container" class="items-container"></div>
+                </div>
+                
+                <div class="category">
+                    <h3>ワッシャー</h3>
+                    <div id="washers-container" class="items-container"></div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <h2>寸法表示</h2>
+                <div id="dimensions-display">
+                    <p class="placeholder">左側から部品を選択してください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
