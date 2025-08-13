@@ -1,0 +1,62 @@
+<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- 右ペイン用参考図 -->
+  <g stroke="black" stroke-width="1" fill="none">
+    <!-- ボルト例 -->
+    <g transform="translate(20,20)">
+      <text x="0" y="-5" font-family="Arial" font-size="10" font-weight="bold">ボルト・ネジ寸法</text>
+      <!-- 頭部 -->
+      <circle cx="40" cy="25" r="15" fill="#e8e8e8"/>
+      <!-- ネジ軸 -->
+      <rect x="35" y="40" width="10" height="25" fill="#e8e8e8"/>
+      
+      <!-- 寸法表示 -->
+      <g stroke="red" stroke-width="1" fill="red" font-family="Arial" font-size="8">
+        <!-- 頭径 -->
+        <line x1="20" y1="25" x2="60" y2="25" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+        <text x="40" y="15" text-anchor="middle">頭径</text>
+        
+        <!-- 頭高 -->
+        <line x1="10" y1="10" x2="10" y2="40" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+        <text x="3" y="28" text-anchor="middle" transform="rotate(-90 3 28)">頭高</text>
+        
+        <!-- 直径 -->
+        <line x1="70" y1="45" x2="70" y2="60" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+        <text x="77" y="55" text-anchor="middle" transform="rotate(-90 77 55)">直径</text>
+      </g>
+    </g>
+    
+    <!-- ナット・ワッシャー例 -->
+    <g transform="translate(150,20)">
+      <text x="0" y="-5" font-family="Arial" font-size="10" font-weight="bold">ナット・ワッシャー寸法</text>
+      <!-- 外形 -->
+      <polygon points="40,15 50,20 50,35 40,40 30,35 30,20" fill="#e8e8e8"/>
+      <!-- 内径 -->
+      <circle cx="40" cy="27.5" r="6" fill="white" stroke="black"/>
+      
+      <!-- 寸法表示 -->
+      <g stroke="red" stroke-width="1" fill="red" font-family="Arial" font-size="8">
+        <!-- 外径 -->
+        <line x1="20" y1="45" x2="60" y2="45" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+        <text x="40" y="55" text-anchor="middle">外径</text>
+        
+        <!-- 内径 -->
+        <line x1="34" y1="10" x2="46" y2="10" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+        <text x="40" y="8" text-anchor="middle">内径</text>
+        
+        <!-- 厚さ -->
+        <line x1="10" y1="15" x2="10" y2="40" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+        <text x="3" y="30" text-anchor="middle" transform="rotate(-90 3 30)">厚さ</text>
+      </g>
+    </g>
+    
+    <!-- 説明テキスト -->
+    <text x="20" y="100" font-family="Arial" font-size="10">各寸法は 最小値 - 公称値 - 最大値 の順で表示されます</text>
+  </g>
+  
+  <!-- 矢印マーカー -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="red"/>
+    </marker>
+  </defs>
+</svg>
